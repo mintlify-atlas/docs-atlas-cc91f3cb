@@ -1,0 +1,112 @@
+{
+  "projectType": "saas",
+  "projectName": "FisioTrack",
+  "projectDescription": "A comprehensive web application for physiotherapy clinic management, enabling clinicians to manage patients, appointments, schedules, and treatment plans.",
+  "theme": "palm",
+  "primaryColor": "#94cb04",
+  "lightColor": "#545454",
+  "darkColor": null,
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/dashboard",
+              "features/patient-management",
+              "features/therapist-management",
+              "features/appointment-scheduling",
+              "features/treatment-plans",
+              "features/calendar",
+              "features/reports"
+            ]
+          },
+          {
+            "group": "User Guide",
+            "pages": [
+              "guides/managing-patients",
+              "guides/scheduling-appointments",
+              "guides/creating-treatment-plans",
+              "guides/managing-availability",
+              "guides/generating-reports"
+            ]
+          },
+          {
+            "group": "Technical",
+            "pages": [
+              "technical/architecture",
+              "technical/authentication",
+              "technical/api-integration",
+              "technical/state-management"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Components",
+        "groups": [
+          {
+            "group": "UI Components",
+            "pages": [
+              "components/overview",
+              "components/forms",
+              "components/tables",
+              "components/modals"
+            ]
+          },
+          {
+            "group": "Pages",
+            "pages": [
+              "components/dashboard-page",
+              "components/patients-page",
+              "components/therapists-page",
+              "components/appointments-page",
+              "components/calendar-page"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Real-time dashboard with appointment overview and statistics",
+    "Comprehensive patient clinical record management with search and filtering",
+    "Therapist profile and specialization management",
+    "Interactive appointment scheduling with availability checking",
+    "Treatment plan creation with session tracking and frequency management",
+    "Visual calendar for managing therapist availability and schedules",
+    "PDF report generation for patient clinical history",
+    "Document upload and viewing for patient records",
+    "Role-based authentication and private routes",
+    "Responsive design optimized for desktop, tablet, and mobile devices"
+  ],
+  "publicApiSurface": [
+    "/login - User authentication page",
+    "/principal - Main dashboard with statistics and upcoming appointments",
+    "/pacientes - Patient listing and search",
+    "/pacientes/nuevo - Create new patient form",
+    "/pacientes/historial/:pacienteId - Patient clinical history and records",
+    "/terapeutas - Therapist management and listing",
+    "/terapeutas/nuevo - Create new therapist form",
+    "/agenda - Therapist availability and schedule management",
+    "/citas - Appointment creation and scheduling",
+    "/planes - Treatment plan creation and configuration",
+    "/reportes - Analytics and charts dashboard",
+    "/uploadfile - Document upload for patient records",
+    "apiFetch() - Centralized API fetch helper with JWT authentication",
+    "apiJson() - JSON API helper with error handling",
+    "getToken() - Retrieve stored authentication token",
+    "setToken() - Store authentication token",
+    "clearSession() - Remove authentication token and clear session"
+  ]
+}
